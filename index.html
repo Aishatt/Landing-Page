@@ -18,8 +18,8 @@
       
       <div class="link">
        <div> <img id="" src="images/logo.svg" alt="" srcset=""></div>
-        <div>Features <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div> 
-      <div>Company <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+        <div>Features <span><img onclick="myFunction()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div> 
+      <div>Company <span><img onclick="myFunction2()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
       <div>Careers <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
       <div>About <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
       </div>
@@ -29,8 +29,11 @@
         <div>Register</div>
       </div>
     </nav>
-    <!---Main-->
-    <div class="card">
+    
+    <!---cards-->
+    <div class="cards">
+     <!---feature-->
+        <div class="card d-none"  id="featCard">
       <div class="i">
         <img src="images/icon-todo.svg" alt="" srcset="">
         <p>Todo List</p>
@@ -48,11 +51,15 @@
         <p>Planning</p>
       </div>
   </div>
-  <div class="card" id="comp">
+  <!---company-->
+  <div class="card d-none" id="compCard">
     <p>History</p>
     <p>Our team</p>
     <p>Blog</p>
     </div>
+    </div>
+
+  <!---Main-->
     <main>
       <!--Left col-->
       <div class="left-col">
@@ -83,6 +90,9 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Adebayo Aisha</a>.
   </div>
+
+
+  <script src="app.js"></script>
 </body>
 
 </html>
