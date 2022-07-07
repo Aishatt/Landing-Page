@@ -1,6 +1,5 @@
 * {
-    line-height: normal;
-    
+    line-height: normal;  
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
@@ -12,7 +11,13 @@ nav {
     font-size: 16px;
     padding: 1rem;
 }
-
+button{
+    border: 2px solid rgb(199, 199, 199);
+    appearance: none;
+    background: none;
+    padding: 4px 18px;
+    
+}
 .link,
 .navEnd {
     display: flex;
@@ -57,16 +62,29 @@ main {
 .left-col {
     display: flex;
     flex-direction: column;
-    
-    max-width: 60%;
+    width: 80%;
     margin-top: 5rem;
 }
 #right-img {
     width: 70%;
 }
-@media screen  {
-    min-width: 90%;
-}
+@media screen and (max-width: 800px) {
+ main {
+      flex-direction: column;
+      padding:0%;
+      align-items: center;
+    }
+    .right-col{
+        flex-wrap: wrap;
+       margin-left: 4rem;
+    }
+    .left-col>h1 {
+       font-size: 44px;
+    }
+    .left-col{
+        margin: 0%;
+    }
+  }
 #spons {
  margin-top: 20%;
 
@@ -83,7 +101,7 @@ main {
     background-color: rgb(34, 103, 164);
     width: max-content;
     height: max-content;
-    padding: 0% .5rem;
+    padding: 0% 1.5rem;
     color: aliceblue;
     border-radius: 10px;
   
@@ -96,6 +114,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    
 }
 .cards{
     display: flex;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="register.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <div class="container">
+    <!----nav-->
+    <nav>
+
+      <div class="link">
+        <div> <img id="" src="images/logo.svg" alt="" srcset=""></div>
+        <div>Features <span><img onclick="myFunction()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+        <div>Company <span><img onclick="myFunction2()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+        <div>Careers <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+        <div>About <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+      </div>
+
+      <div class="navEnd">
+        <div>Login</div>
+        <div>Register</div>
+      </div>
+    </nav>
+    <!---login section-->
+
+    <section>
+      <div class="form">
+        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" required id="fname" name="email">
+          </div>
+
+          <div>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required name="password">
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+form > div{
+    margin: 1rem 0%;
+  
+    padding: 8px;
+
+}
+form{
+background-color: rgb(236, 204, 204);
+padding: 2rem 4rem;
+}
+label{
+ font-weight: bold;
+ font-size: 14px;
+}
+
+input{
+    border: none;
+    width: 300px;
+    height: 30px;
+    margin-top: 2%;
+    font-size:14px;
+    padding-left:16px ;
+}
+#submit{
+   margin-left: 62%;
+   background-color: rgb(88, 88, 245);
+   color: white;
+   border: none;
+   padding: 10px 25px;
+   font-size: 16px;
+}
