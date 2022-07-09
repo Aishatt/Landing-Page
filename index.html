@@ -15,55 +15,62 @@
   <div class="container">
     <!----nav-->
     <nav>
-      
-      <div class="link">
-       <div> <img id="" src="images/logo.svg" alt="" srcset=""></div>
-        <div>Features <span><img onclick="myFunction()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div> 
-      <div>Company <span><img onclick="myFunction2()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
-      <div>Careers <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
-      <div>About <span><img src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+      <div> <img id="" src="images/logo.svg" alt="" srcset=""></div>
+      <div class="nav">
+        <div class="link">
+          <img class="d-none close-menu" onclick="closeMenu()" src="images/icon-close-menu.svg" alt="" srcset="">
+          <div>Features <span><img class="dropbtn" onclick="showCard1()" src="images/icon-arrow-down.svg" alt="" srcset="">
+          </span>
+        </div>
+        
+        
+        <div>Company <span><img onclick="showCard2()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+          <div>Careers </div>
+          <div>About </div>
+        </div>
+
+        <div class="navEnd">
+          <div onclick="window.location.href='login.html'"> <button>
+              Login
+            </button> </div>
+          <div id="reg" onclick="window.location.href='Register.html'"> <button>
+              Register
+            </button> </div>
+        </div>
       </div>
-      
-      <div class="navEnd">
-        <div onclick="window.location.href='login.html'"> <button>
-          Login
-        </button> </div>
-        <div onclick="window.location.href='Register.html'"> <button>
-          Register
-        </button> </div>
-      </div>
+      <img class=" menu-logo" onclick="myMenu()" src="images/icon-menu.svg" alt="" srcset="">
     </nav>
 
     <!---cards-->
     <div class="cards">
-     <!---feature-->
-        <div class="card d-none"  id="featCard">
-      <div class="i">
-        <img src="images/icon-todo.svg" alt="" srcset="">
-        <p>Todo List</p>
+      <!---feature-->
+      <div class="card d-none" id="featCard">
+        <div class="i">
+          <img src="images/icon-todo.svg" alt="" srcset="">
+          <p>Todo List</p>
+        </div>
+        <div class="i">
+          <img src="images/icon-calendar.svg" alt="" srcset="">
+          <p>Calender</p>
+        </div>
+        <div class="i">
+          <img src="images/icon-reminders.svg" alt="" srcset="">
+          <p>Reminders</p>
+        </div>
+        <div class="i">
+          <img src="images/icon-planning.svg" alt="" srcset="">
+          <p>Planning</p>
+        </div>
       </div>
-      <div class="i">
-        <img src="images/icon-calendar.svg" alt="" srcset="">
-        <p>Calender</p>
+      <!---company-->
+      <div class="card d-none" id="compCard">
+        <p>History</p>
+        <p>Our team</p>
+        <p>Blog</p>
       </div>
-      <div class="i">
-        <img src="images/icon-reminders.svg" alt="" srcset="">
-        <p>Reminders</p>
-      </div>
-      <div class="i">
-        <img src="images/icon-planning.svg" alt="" srcset="">
-        <p>Planning</p>
-      </div>
-  </div>
-  <!---company-->
-  <div class="card d-none" id="compCard">
-    <p>History</p>
-    <p>Our team</p>
-    <p>Blog</p>
-    </div>
     </div>
 
-  <!---Main-->
+    <!---Main-->
     <main>
       <!--Left col-->
       <div class="left-col">
@@ -76,10 +83,10 @@
         </p>
         <button>Learn more</button>
         <div id="spons">
-          <img  src="images/client-databiz.svg" alt="" srcset="">
-          <img  src="images/client-audiophile.svg" alt="" srcset="">
-          <img  src="images/client-meet.svg" alt="" srcset="">
-          <img  src="images/client-maker.svg" alt="" srcset="">
+          <img src="images/client-databiz.svg" alt="" srcset="">
+          <img src="images/client-audiophile.svg" alt="" srcset="">
+          <img src="images/client-meet.svg" alt="" srcset="">
+          <img src="images/client-maker.svg" alt="" srcset="">
         </div>
       </div>
       <!--right col-->

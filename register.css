@@ -1,20 +1,24 @@
-.form{
+.form, .lform{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-   
+  
+}
+
+section{
+  
+    margin-top: 5rem;
 }
 form > div{
     margin: 1rem 0%;
-  
-    padding: 8px;
-
+    padding: 4px;
 }
 form{
 background-color: rgb(236, 204, 204);
-padding: 2rem 4rem;
+padding: 1rem 2rem;
+box-shadow: 5px 5px #3c020207;
 }
+
 label{
  font-weight: bold;
  font-size: 14px;

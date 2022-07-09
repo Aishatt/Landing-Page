@@ -3,35 +3,43 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
+    
     background-color: rgb(252, 249, 244);
+    cursor:context-menu;
 }
-nav {
+nav{
+    position: relative;
+}
+nav,.nav,.link,.navEnd,main{
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    padding: 1rem;
 }
-button{
-    border: 2px solid rgb(199, 199, 199);
-    appearance: none;
-    background: none;
-    padding: 4px 18px;
+.nav {
     
+    font-size: 16px;
+    width: 100%;
+    margin-left: 2rem;
 }
-.link,
-.navEnd {
-    display: flex;
-    align-items: center;
-
+.navEnd > div>button:hover{
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+.navEnd > div>button{
+    font-size: 14px;
+    color: rgb(59, 58, 58);
 }
 
+.link>div:hover{
+    color: rgb(112, 112, 112);
+    cursor: pointer;
+}
 .link>div,
 .navEnd>div {
     padding: .1rem .9rem;
 }
 
 main {
-    display: flex;
     padding-left: 5rem;
 }
 
@@ -48,15 +56,21 @@ main {
 }
 
 .left-col>button {
-    appearance: none;
-    outline: none;
+  
     border: 1px solid black;
     border-radius: 15px;
-    background-color: white;
     width: fit-content;
     padding: 1rem 2rem;
-    font-weight: bold;
     margin-top: 2rem;
+}
+button {
+    appearance: none;
+    outline: none;
+   border: none;
+   background: none;
+    width: fit-content;
+    font-weight: bold;
+    cursor: pointer; 
 }
 
 .left-col {
@@ -67,6 +81,9 @@ main {
 }
 #right-img {
     width: 70%;
+}
+.menu-logo,.close-menu{
+    display: none;
 }
 @media screen and (max-width: 800px) {
  main {
@@ -83,6 +100,50 @@ main {
     }
     .left-col{
         margin: 0%;
+    }
+    .nav,.link,.navEnd{
+        flex-direction: column; 
+    }
+    .nav{
+        background-color: rgb(255, 255, 255);
+        color: rgb(100, 100, 100);
+        width: 60vw;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        justify-content:start;
+        display: none;
+    }
+    .navEnd{
+     align-items: center;
+     
+    }
+    .navEnd>div {
+        padding: .7rem .9rem;
+        margin: .5rem 0%;
+        
+    }
+    #reg{
+        border: 1px solid black;
+        border-radius: 15px;
+        width: fit-content;
+        padding: .7rem 2rem;
+        text-align: center;
+    }
+    .menu-logo{
+        display: block;  
+    }
+    .close-menu{
+        width: 8%;
+        margin-left:85% ;
+        margin-top: 1rem;
+    }
+    .close-menu:hover{
+        width: 10%;
+    }
+    .link>div{
+        margin: 20px;
     }
   }
 #spons {
@@ -127,3 +188,7 @@ margin-top: -1rem;
     margin-left: 8rem;
     margin-top: -1rem;
 }
+
+
+
+
