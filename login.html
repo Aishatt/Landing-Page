@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <!----nav-->
- <a href="./index.html"></a><img src="images/logo.svg" alt="" srcset="">
+    <a href="./index.html"><img src="images/logo.svg" alt="" srcset=""></a>
     <!---login section-->
 
     <section>
@@ -23,7 +23,7 @@
         <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
           <div>
             <label for="email">Email</label><br>
-            <input type="email" required id="fname" name="email">
+            <input type="email" required id="email" name="email">
           </div>
 
           <div>
@@ -31,7 +31,7 @@
             <input type="password" id="password" required name="password">
           </div>
 
-          <button type="submit">Login</button>
+          <button id="submit" type="submit">Login</button>
         </form>
       </div>
     </section>

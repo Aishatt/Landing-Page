@@ -19,12 +19,35 @@
       <div class="nav">
         <div class="link">
           <img class="d-none close-menu" onclick="closeMenu()" src="images/icon-close-menu.svg" alt="" srcset="">
-          <div>Features <span><img class="dropbtn" onclick="showCard1()" src="images/icon-arrow-down.svg" alt="" srcset="">
+          <div class="dropdown">Features <span><img  onclick="myFunction()" class="dropbtn" src="images/icon-arrow-down.svg" alt="" srcset="">
           </span>
+           <div id="myDropdown" class="dropdown-content card">
+            <div class="i">
+              <img src="images/icon-todo.svg" alt="" srcset="">
+              <p>Todo List</p>
+            </div>
+            <div class="i">
+              <img src="images/icon-calendar.svg" alt="" srcset="">
+              <p>Calender</p>
+            </div>
+            <div class="i">
+              <img src="images/icon-reminders.svg" alt="" srcset="">
+              <p>Reminders</p>
+            </div>
+            <div class="i">
+              <img src="images/icon-planning.svg" alt="" srcset="">
+              <p>Planning</p>
+            </div>
+          </div>
         </div>
-        
-        
-        <div>Company <span><img onclick="showCard2()" src="images/icon-arrow-down.svg" alt="" srcset=""></span></div>
+  
+        <div>Company <span><img  onclick="myFunction2()" class="dropbtn" src="images/icon-arrow-down.svg"
+           alt="" srcset=""></span>
+           <div id="myDropdown2" class="dropdown-content">
+            <p>History</p>
+        <p>Our team</p>
+        <p>Blog</p>
+          </div></div>
           <div>Careers </div>
           <div>About </div>
         </div>
@@ -40,34 +63,6 @@
       </div>
       <img class=" menu-logo" onclick="myMenu()" src="images/icon-menu.svg" alt="" srcset="">
     </nav>
-
-    <!---cards-->
-    <div class="cards">
-      <!---feature-->
-      <div class="card d-none" id="featCard">
-        <div class="i">
-          <img src="images/icon-todo.svg" alt="" srcset="">
-          <p>Todo List</p>
-        </div>
-        <div class="i">
-          <img src="images/icon-calendar.svg" alt="" srcset="">
-          <p>Calender</p>
-        </div>
-        <div class="i">
-          <img src="images/icon-reminders.svg" alt="" srcset="">
-          <p>Reminders</p>
-        </div>
-        <div class="i">
-          <img src="images/icon-planning.svg" alt="" srcset="">
-          <p>Planning</p>
-        </div>
-      </div>
-      <!---company-->
-      <div class="card d-none" id="compCard">
-        <p>History</p>
-        <p>Our team</p>
-        <p>Blog</p>
-      </div>
     </div>
 
     <!---Main-->

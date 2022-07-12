@@ -1,39 +1,50 @@
 * {
-    line-height: normal;  
+    line-height: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    
+
+body {
+
     background-color: rgb(252, 249, 244);
-    cursor:context-menu;
+    cursor: context-menu;
 }
-nav{
+
+nav {
     position: relative;
 }
-nav,.nav,.link,.navEnd,main{
+
+nav,
+.nav,
+.link,
+.navEnd,
+main {
     display: flex;
     justify-content: space-between;
 }
+
 .nav {
-    
+
     font-size: 16px;
     width: 100%;
     margin-left: 2rem;
 }
-.navEnd > div>button:hover{
+
+.navEnd>div>button:hover {
     padding: 6px 12px;
-    border: 1px solid black;
+
     border-radius: 10%;
 }
-.navEnd > div>button{
+
+.navEnd>div>button {
     font-size: 14px;
     color: rgb(59, 58, 58);
 }
 
-.link>div:hover{
+.link>div:hover {
     color: rgb(112, 112, 112);
     cursor: pointer;
 }
+
 .link>div,
 .navEnd>div {
     padding: .1rem .9rem;
@@ -46,7 +57,7 @@ main {
 .left-col>h1 {
     font-size: 60px;
     line-height: 60px;
-   
+
 }
 
 .left-col>p {
@@ -56,21 +67,22 @@ main {
 }
 
 .left-col>button {
-  
+
     border: 1px solid black;
     border-radius: 15px;
     width: fit-content;
     padding: 1rem 2rem;
     margin-top: 2rem;
 }
+
 button {
     appearance: none;
     outline: none;
-   border: none;
-   background: none;
+    border: none;
+    background: none;
     width: fit-content;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .left-col {
@@ -79,32 +91,43 @@ button {
     width: 80%;
     margin-top: 5rem;
 }
+
 #right-img {
     width: 70%;
 }
-.menu-logo,.close-menu{
+
+.menu-logo,
+.close-menu {
     display: none;
 }
+
 @media screen and (max-width: 800px) {
- main {
-      flex-direction: column;
-      padding:0%;
-      align-items: center;
+    main {
+        flex-direction: column;
+        padding: 0%;
+        align-items: center;
     }
-    .right-col{
+
+    .right-col {
         flex-wrap: wrap;
-       margin-left: 4rem;
+        margin-left: 4rem;
     }
+
     .left-col>h1 {
-       font-size: 44px;
+        font-size: 44px;
     }
-    .left-col{
+
+    .left-col {
         margin: 0%;
     }
-    .nav,.link,.navEnd{
-        flex-direction: column; 
+
+    .nav,
+    .link,
+    .navEnd {
+        flex-direction: column;
     }
-    .nav{
+
+    .nav {
         background-color: rgb(255, 255, 255);
         color: rgb(100, 100, 100);
         width: 60vw;
@@ -112,83 +135,132 @@ button {
         position: absolute;
         right: 0;
         top: 0;
-        justify-content:start;
+        justify-content: start;
         display: none;
     }
-    .navEnd{
-     align-items: center;
-     
+
+    .navEnd {
+        align-items: center;
+
     }
+
     .navEnd>div {
         padding: .7rem .9rem;
         margin: .5rem 0%;
-        
+
     }
-    #reg{
+
+    #reg {
         border: 1px solid black;
         border-radius: 15px;
         width: fit-content;
         padding: .7rem 2rem;
         text-align: center;
     }
-    .menu-logo{
-        display: block;  
+
+    .menu-logo {
+        display: block;
     }
-    .close-menu{
+
+    .close-menu {
         width: 8%;
-        margin-left:85% ;
+        margin-left: 85%;
         margin-top: 1rem;
     }
-    .close-menu:hover{
+
+    .close-menu:hover {
         width: 10%;
     }
-    .link>div{
+
+    .link>div {
         margin: 20px;
     }
-  }
+}
+
 #spons {
- margin-top: 20%;
+    margin-top: 20%;
 
 }
-#spons >img{
-    padding: 1rem  ;
+
+#spons>img {
+    padding: 1rem;
 }
-.attribution{
+
+.attribution {
     text-align: center;
     margin-top: 4rem;
 }
 
-.card{
+.card {
     background-color: rgb(34, 103, 164);
     width: max-content;
     height: max-content;
     padding: 0% 1.5rem;
     color: aliceblue;
     border-radius: 10px;
-  
+
 }
-.d-none{
-    display: none ; 
+
+.d-none {
+    display: none;
 }
-.card >.i{
-       display: flex;
+
+.card>.i {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    padding: 4px;
 }
-.cards{
+
+.cards {
     display: flex;
-  margin-left: 8rem;
-}
-#featCard{
-margin-top: -1rem;
-}
-#compCard{
     margin-left: 8rem;
-    margin-top: -1rem;
+    position: absolute;
 }
 
+#compCard {
+    margin-left: 8rem;
+
+}
+
+/* Dropdown Button */
 
 
+/* Dropdown button on hover & focus */
 
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #2980B9;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
